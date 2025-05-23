@@ -1,0 +1,1 @@
+pycache/ *.pyc *.pyo *.pyd venv/ *.db *.sqlite3 *.log db/
