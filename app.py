@@ -18,7 +18,7 @@ from deepdiff import DeepDiff
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///neofi_events.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY", "988c1e08ca6c030b0d359ce34e50aee205387deb2aeac7c47556ff04aca01053")
+app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY", "Secret key")
 app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(hours=1)
 app.config["JWT_REFRESH_TOKEN_EXPIRES"] = timedelta(days=30)
 db.init_app(app)
